@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #565a5d;
+    color: white;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../assets/img/cat-god.jpg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right 10px top 10px;
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    width: 35%;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.4em; 
+    line-height: 50px; 
+    text-indent: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.n-3 span{
+    color: #5cc4c1;
+}
+.n-4 span{
+    font-weight: bolder;
+}
+h2{
+    font-size: 2.5em;
+    word-spacing : 25px;
+    font-family: 'Amatic SC', cursive;
+}
+h3{
+    font-size: 1.5em;
+    word-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 50px;
+    text-indent: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+#text-1{
+    font-weight: bolder;
+    text-align: end;
+}
+footer img{
+    height: 50px;
+}
+footer{
+   text-align: center;
+   line-height: normal;
+}
+footer p{
+    line-height: normal;
+}
+footer  span{
+    color: #5cc4c1;
+}

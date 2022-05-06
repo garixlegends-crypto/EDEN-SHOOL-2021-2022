@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Raleway:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+body{
+    background-color: #9F817F;
+    color:blue;
+    font-size: 1.6rem;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+h1,h2{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+    color: lightgray;
+}
+span{
+    color: firebrick;
+}
+#tablet,#ordi,#grand{
+    display: none;
+}
+#bf{
+    display: none;
+}
+
+@media screen and (min-width: 776px) and (max-width: 991px){
+    html{
+        font-size: 14px;
+    }
+    body{
+        background-color: cornflowerblue;
+    }
+    span{
+        color: black;
+    }
+    #mobile, #ordi, #grand{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    html{
+        font-size: 18px;
+    }
+    body{
+        background-color: goldenrod;
+        color: #75C9C8;
+    }
+    span{
+        color: fuchsia;
+    }
+    #mobile, #ordi, #grand{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #ordi{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    html{
+        font-size: 20px;
+    }
+    body{
+        background-color: powderblue;
+        color: red;
+    }
+    span{
+        color: darkseagreen;
+    }
+    #tablet, #ordi, #mobile{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #ordi{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;} /* End https://www.cursors-4u.com */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/* on passe au class standards du jour */
+
+header{
+    background-color: #0079BD;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.return{
+    width: 10%;
+    height: 200px;
+    background-color: #202124;
+}
+.header-container{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.header-container h2{
+    font-weight: unset;
+    color: white;
+}
+.langage{
+    display: flex;
+    align-items: center;
+    width: 55%;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px;
+}
+.header-container img{
+    width: 10%;
+}
+.container-porto-img{
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+.fc-porto-2004  {
+    width: 100%;
+    height: 585px;
+    background-image: url(../img/2004_fc_porto.webp);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.wiki{
+    text-align: center;
+    margin: auto;
+    width: 65%;
+    padding: 15px;
+}
+.animation-1{
+    border: solid 10px #0079BD; 
+    clip-path: polygon( 
+      calc(0% + 5px) calc(0% + 5px), /* top left */
+      calc(100% - 5px) calc(0% + 5px), /* top right */
+      calc(100% - 5px) calc(100% - 5px), /* bottom right */
+      calc(0% + 5px) calc(100% - 5px) /* bottom left */
+    );
+    transition: clip-path 0.6s linear;
+}
+.animation-1:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.animation-1 img{
+    width: 30%;
+}
+.wiki h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+.fc-porto-2004:hover:hover{
+    transform: scale(1.1);
+}
+.Cup{
+    background: #fafafa;
+    width: 62%;
+    margin: auto;
+    padding: 20px;
+}
+.Cup h2{
+    color: #0AA9ED;
+}
+.globe-trophiest{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.globe-trophiest p{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+a{
+    color:#ccc;
+    text-shadow:0 -1px 0 black;                
+}
+a:hover,a:focus{
+    box-shadow:0 1px 0 white;
+}
+a span{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -3px;
+    color: #09c;
+    background: rgba(0,0,0,.9);
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 50%);
+    transform: scale(0) rotate( 
+-12deg);
+    transition: all .25s;
+    opacity: 0;
+}
+a:hover span, a:focus span{
+    transform:scale(1) rotate(0);        
+    opacity:1;
+}
+
+.classement-2021 {
+    text-align: center;
+    margin: auto;
+    width: 65%;
+    padding: 15px;
+}
+.liga{
+    box-shadow: none;
+    background: #202124;
+    border: 1px solid #3c4043;
+    border-radius: 8px;
+}
+.bwin{
+    padding: 16px 16px;
+    color: white;
+    text-align: initial;
+    background: #0AA9ED;
+    vertical-align: top;
+    text-align: initial;
+}
+.block-api{
+    width: 65%;
+    margin: auto;
+}
+.maillot {
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    padding: 15px;
+}
+.maillot img:hover {
+    background-color: #0079BD;
+    
+}
+.maillot img{
+    margin: 50px;
+    width: 25%;
+    box-shadow: 1px 7px 20px #0AA9ED;
+    padding: 15px;
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  #0AA9ED white;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 25px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: orange;
+  }
+  
+
+  
+@media (max-width: 1000px) { 
+    .fc-porto-2004 {
+        width: 100%;
+        height: 230px;
+        background-image: url(../img/2004_fc_porto.webp);
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+ }
+ 

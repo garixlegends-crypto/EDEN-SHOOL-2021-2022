@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset='UTF-8'>
+    <title>Testeur :nth</title>
+    <link rel='stylesheet' href='nth-tester2.css'>
+</head>
+<body>
+    <div id="demo-top-bar">
+        <div id="demo-bar-inside">
+            <h2 id="demo-bar-badge">
+                <a href="https://www.marevueweb.com/css-html/liste-nth-child-propriete/">&larr; Article Ma Revue</a>
+                <a href="https://la-cascade.io/nth-child/">&larr; Article La Cascade</a>
+                <a href='https://flukeout.github.io/' class='header-button'>&larr; Jeu en ligne</a> </div>
+            </h2>
+            <div id="demo-bar-buttons">
+            </div>
+        </div>
+        <h1>Testeur de la pseudo classe :nth</h1>
+        <div id="page-wrap">
+            <div class="left">
+                <div class="instructions">
+                    <p id="noscript">Sorry:<br>this tester doesn't work when JavaScript is not enabled...</p>
+                    <code>
+                        <select id="el">
+                            <option value="li">li</option>
+                            <option value="div">div</option>
+                        </select>
+                        <select id="kind">
+                            <option value=":nth-child" selected>:nth-child</option>
+                            <option value=":nth-of-type">:nth-of-type</option>
+                            <option value=":nth-last-child">:nth-last-child</option>
+                            <option value=":nth-last-of-type">:nth-last-of-type</option>
+                        </select>
+                        (
+                        <input id="equation" type="text" value="3n+2">
+                        )
+                    </code>
+                    <h3>Sélectionner ...</h3>
+                    <ul class="recipies-list">
+                        <!-- <li id="rec-8" class="active"><a href="#">Select every third element starting at second if it's a list item</a></li> -->
+                        <li id="rec-8" class="active"><a href="#">tous les 3èmes &lt;li> à partir du second</a></li>
+                        <!-- <li id="rec-1"><a href="#">Select the third item if it's a list item</a></li> -->
+                        <li id="rec-1"><a href="#">le 3ème &lt;li> de chaque liste</a></li>
+                        <!-- <li id="rec-2"><a href="#">Select the the first four elements if they are list items</a></li> -->
+                        <li id="rec-2"><a href="#">les 4 premiers &lt;li> de chaque liste</a></li>
+                        <!-- <li id="rec-3"><a href="#">Select the second to last element if it is a list item</a></li> -->
+                        <li id="rec-3"><a href="#">l'avant-dernier &lt;li></a></li>
+                        <!-- <li id="rec-4"><a href="#">Select the first appearing div</a></li> -->
+                        <li id="rec-4"><a href="#">la 1ère div enfant de chaque bloc</a></li>
+                        <!-- <li id="rec-5"><a href="#">Select the last appearing div</a></li> -->
+                        <li id="rec-5"><a href="#">la dernière div enfant de chaque bloc</a></li>
+                        <!-- <li id="rec-6"><a href="#">Select odd list items</a></li> -->
+                        <li id="rec-6"><a href="#">les &lt;li> impairs</a></li>
+                        <!-- <li id="rec-7"><a href="#">Select every fifth list item starting at first</a></li> -->
+                        <li id="rec-7"><a href="#">tous les 5èmes &lt;li> à partir du 1er/a></li>
+                            <!-- <li id="rec-9"><a href="#">Select all but the first 6 list items</a></li> -->
+                            <li id="rec-9"><a href="#">tous les &lt;li> sauf les 6 premiers</a></li>
+                        </ul>
+                        <h3 class="note">Note</h3>
+                        <!-- <p>The &lt;div> and &lt;ins> elements in the code tree on the right don't show their closing tags (for visual simplicity), but they are actually there!</p> -->
+                        <p>Les éléments &lt;div> et &lt;ins> apparaissant sur la droite n'ont pas leur balise fermante pour une lecture plus facile, mais elles sont bien dans le code HTML.</p>
+                        <!-- <p>Credit to Francky Kleyneman for the improved second version of this page.</p> -->
+                        <p>Source <a href="https://css-tricks.com/examples/nth-child-tester" style="color: darkseagreen;">https://css-tricks.com/examples/nth-child-tester (en anglais)</a>.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul id="list">
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <ins></ins> <div></div> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <ins></ins> <div></div> <div></div> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <div></div> <ins></ins>
+                            <ul>
+                                <li> <div></div> <div></div> <div></div> </li>
+                                <li> <div></div> <div></div> <div></div> </li>
+                                <li> <div></div> <div></div> <div></div> </li>
+                            </ul>
+                        </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <ins></ins> <div></div> <div></div> </li>
+                        <li> <ins></ins> <ins></ins> <div></div> </li>
+                        <li> <div></div> <div></div> <ins></ins> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <ins></ins> <ins></ins> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <div></div> <div></div>
+                            <ul>
+                                <li> <div></div> <div></div> <div></div>
+                                    <ul>
+                                        <li> <div></div> <div></div> <div></div> </li>
+                                        <li> <div></div> <div></div> <div></div> </li>
+                                        <li> <div></div> <div></div> <div></div> </li>
+                                    </ul>
+                                </li>
+                                <li> <div></div> <div></div> <div></div> </li>
+                                <li> <div></div> <div></div> <div></div> </li>
+                            </ul>
+                        </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                        <li> <div></div> <div></div> <div></div> </li>
+                    </ul>
+                </div>
+            </div>
+            <style type="text/css" style="display: none !important;">
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                body {
+                    overflow-x: hidden;
+                }
+                #demo-top-bar {
+                    text-align: left;
+                    background: darkseagreen;
+                    position: relative;
+                    zoom: 1;
+                    width: 100% !important;
+                    z-index: 6000;
+                    padding: 20px 0 20px;
+                }
+                #demo-bar-inside {
+                    width: 960px;
+                    margin: 0 auto;
+                    position: relative;
+                    overflow: hidden;
+                }
+                #demo-bar-buttons {
+                    padding-top: 10px;
+                    float: right;
+                }
+                #demo-bar-buttons a {
+                    font-size: 12px;
+                    margin-left: 20px;
+                    color: white;
+                    margin: 2px 0;
+                    text-decoration: none;
+                    font: 14px "Lucida Grande", Sans-Serif !important;
+                }
+                #demo-bar-buttons a:hover,
+                #demo-bar-buttons a:focus {
+                    text-decoration: underline;
+                }
+                #demo-bar-badge {
+                    display: inline-block;
+                    width: 80%;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    background-color: transparent !important;
+                }
+                #demo-bar-badge a {
+                    border-radius: 0;
+                    bottom: auto;
+                    margin: 0;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 5%;
+                    font: 14px "Lucida Grande", Sans-Serif !important;
+                }
+                #demo-bar-badge:before, #demo-bar-badge:after {
+                    display: none !important;
+                }
+            </style>
+            <!-- <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type="d425b7acd21792c9b8bf001a-text/javascript"></script> -->
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            <script src='nth-tester2.js' type="d425b7acd21792c9b8bf001a-text/javascript"></script>
+            <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="d425b7acd21792c9b8bf001a-|49" defer=""></script></body>
+            </html>

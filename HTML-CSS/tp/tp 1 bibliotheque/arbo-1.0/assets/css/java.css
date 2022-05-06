@@ -1,0 +1,50 @@
+body{
+    margin: auto;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-attachment: fixed;
+}
+h1{
+    font-size: 3em;
+}
+.livre-js{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+section{
+    margin: 28px;
+}
+main{
+    text-align: center;
+}
+.livre-js img{
+    width: 250px;
+}
+.chapt{
+    margin: auto;
+    width: 85%;
+}
+#bkgrd-orange{
+    background-color: orange;
+    display: inline;
+}
+p{
+    text-align: center;
+}

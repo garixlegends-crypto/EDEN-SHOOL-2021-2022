@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+ <script> function Produit(id, designation, prix) {
+    this.id= id;
+    this.prix= prix;
+    this.designation= designation;
+    this.toString= function() {
+      return this.designation + " "+ prix;
+    }
+}
+
+var catalogue= new Array();
+catalogue.push(new Produit(1, "ordinateur", 200));
+catalogue.push(new Produit(2, "LOL", 200));
+catalogue.push(new Produit(3, "test", 200));
+catalogue.push(new Produit(4, "souris", 20));
+catalogue.push(new Produit(5, "uniter centrale", 620));
+catalogue.push(new Produit(6, "ok", 200));
+var panier= new Array();
+
+
+function remplirCatalogue() {
+      var cat = document.getElementById('cat');
+    for (var i in catalogue) {
+        var e= document.createElement("option");
+        e.value=i;
+          var txt= document.createTextNode(catalogue[i].designation);
+          e.appendChild(txt);
+        cat.appendChild(e);
+    }
+}
+
+function ajouterCase(parent, txt) {
+var e= document.createElement("td");
+e.appendChild(document.createTextNode(txt));
+parent.appendChild(e);
+}
+
+function calculerTotal() {
+var tot= 0;
+for (var p in panier) {
+    tot+= panier[p].prix;
+}
+return tot;
+}
+
+function ajouter() {
+      var cat= document.getElementById('cat');
+    var sel= cat.options[cat.selectedIndex].value;
+    var prod= catalogue[sel];
+    panier.push(prod);
+    var ligne= document.createElement("tr");
+      ajouterCase(ligne,prod.designation);
+      ajouterCase(ligne,prod.prix);
+    document.getElementById("pan").appendChild(ligne);
+    document.getElementById("tot").innerHTML= calculerTotal();
+}
+</script>
+<select id="cat" multiple>
+</select>
+
+<button onclick="ajouter();">ajouter</button>
+
+<table id="pan">
+<tr><th>désignation</th><th>prix</th></tr>
+</table>
+
+<p>Total <span id="tot">0</span></p>
+
+<script src="fonction.js"></script>
+<script>
+remplirCatalogue();
+</script>
+    <script src="/script.js"></script>
+</body>
+</html>

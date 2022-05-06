@@ -1,0 +1,25 @@
+header{
+  background-color: #ffffff;
+  border: 1px solid black;
+  width: 55%;
+  margin: auto;
+  text-align: center;
+}
+div {
+    padding: 15px; 
+  }
+  .div2, .div3{
+    height: 500px;
+  }
+  .div1 {
+    background: red;
+  }
+  
+  .div2 {
+    background: yellow;
+    float: left;
+  }
+  
+  .div3 {
+    background: green;
+  }

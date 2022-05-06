@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+}
+/* on passe au class standards du jour */
+.container{
+    margin: auto;
+    border: solid 30px #CCCCCC;
+}
+header{
+    background-image: url(../img/banner-images/banner-image-1.jpg);
+    height: 1000px;
+    background-size: 100%;
+    background-position: top;
+    padding: 25px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.d-flex-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 50%);
+}
+.d-flex-header ul{
+    display: flex;
+}
+.d-flex-header li{
+    list-style: none;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.d-flex-header .fab{
+    margin: 15px;
+}
+.line-yellow{
+    width: 5%;
+    height: 10px;
+    background-color: #D2B355;
+}
+.h1-bar{
+    margin-top: 200px;
+}
+.h1-bar h1{
+    font-weight: 900;
+}
+.block-hover{
+    width: 15%;
+    height: 65px;
+    border: solid;
+    margin-top: 55px;
+    color: black;
+    text-align: center;
+}
+.block-hover:hover{
+    background-color: #D2B355;
+}
+.block-help span{
+    color: #999999;
+}
+#section-1{
+    display: flex;
+    margin-top: 100px;
+}
+.d-flex-icon-html{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.d-flex-icon-html .fab, .fas{
+    color: gold;
+    font-size: 4rem;
+}
+.d-flex-icon-html  .fas{
+    color: gold;
+    font-size: 4rem;
+}
+.longage-code{
+    flex-basis: 50%;
+}
+.block-help{
+    width: 35%;
+    padding: 15px;
+}
+.d-col-image-6{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.d-col-image-6 img{
+    width: 33%;
+}
+#section-2{
+    margin-top: 100px;
+}
+#section-3{
+    display: flex;
+    padding: 20px;
+}
+#section-3 h2{
+    font-size: 5rem;
+}
+#section-3 img{
+    width: 25%;
+}
+#section-3  span{
+    color: #999999;
+}
+.lorem-laquo{
+    margin: 15px;
+}
+.arrow-right{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid black;
+    margin: 5px;
+}
+.block-hover-1 {
+    width: 40%;
+    height: 65px;
+    border: solid;
+    margin-top: 55px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-4{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section-4 span {
+    color: #999999;
+}
+.block-hover-1:hover{
+    background-color: #D2B355;
+}
+.d-flex-container{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+.d-flex-container img{
+    border-radius: 50%;
+    width: 25%;
+}
+.user-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section-5{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 200px;
+}
+#section-5 img{
+    width: 25%;
+}
+.block-help-1{
+    height: 65px;
+    border: solid;
+    margin-top: 55px;
+    color: black;
+    text-align: center;
+}
+.comp-img{
+    width: 40%;
+}
+.cpy {
+    width: 60%;
+    text-align: center;
+}
+.cpy img:hover
+{
+    background:#D2B355;
+}
+#section-6{
+    background-color: #E1E1E1;
+}
+#fleche, .fas{
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    color: black;
+}
+#section-6{
+    background-color: gainsboro;
+}
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.block-white{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    background: #eee;
+    border: 1px solid transparent;
+}
+.d-flex-section-6 .block-white:hover {
+    border: 10px solid #D2B355;
+ }
+.block-hover-2{
+    margin: auto;
+    width: 40%;
+    height: 65px;
+    border: solid;
+    margin-top: 55px;
+    color: black;
+    text-align: center;
+}
+.block-hover-2:hover{
+    background-color: #D2B355;
+}
+.d-flex-section-6{
+    display: flex;
+}
+.gray{
+
+    background-color: lightgray;
+    height: 265px;
+}
+.yellow{
+    background-color: #D2B355;
+    height: 265px;
+}
+.yellow h2{
+    font-size: 4rem;
+}
+.gray h2{
+    font-size: 4rem;
+}
+.d-flex-yellow{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/* on passe au class standards du jour */
+body{
+    background-color: black;
+    color: white;
+    padding-top: 10%;
+    text-align: center;
+}
+h1{
+    border-bottom: 3px solid gray;
+}
+h2,h3{
+    font-size: 2.3rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+section{
+    float: left;
+    width: 50%;
+    padding: 3% 5%;
+}
+/* LA SURCHARGE*/
+h2{
+    background-color: #e1cdb5;
+}
+h2{
+    background-color: green;
+    background-color: greenyellow;
+}
+
+/* SPECIFICITE */
+/* 1-1-0*/
+#h3.h3{
+    background-color: darkorange;
+}
+/* 1-0-0*/
+#h3{
+    background-color: firebrick;
+}
+
+/* 0-1-0*/
+.h3{
+    background-color: khaki;
+}
+/* 0-0-2*/
+section > h3{
+    background-color: hotpink;
+}
+
+/* 0-0-1*/
+h3{
+    background-color: greenyellow;
+}

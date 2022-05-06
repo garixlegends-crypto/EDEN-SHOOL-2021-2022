@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Sketch_Gothic_School;
+  src: url(/Sketch_Gothic_School.ttf);
+}
+
+/* police */
+
+body {
+  font-size: 1.2rem;
+  margin: 0px;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+
+/* Taille - Font de base*/
+
+.container {
+  margin: auto;
+  width: 65%;
+}
+
+/* container */
+
+h1 {
+  font-family: Sketch_Gothic_School;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-top: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #e4934c;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px;
+}
+ul {
+  display: flex;
+}
+article span {
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.4em;
+}
+article {
+  padding: 60px 0;
+}
+article img {
+  width: 120px;
+  transition: transform 1s;
+}
+article img:hover {
+  transform: scale(120%);
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#back_forg {
+  background-color: #542b29;
+}
+
+#back_march {
+  background-color: #9a9a8e;
+}
+
+#back_mdc {
+  background-color: #542b29;
+}
+
+#back_maitreDarme {
+  background-color: #9a9a8e;
+}
+
+#back_sorcier {
+  background-color: #542b29;
+}
+
+.clear {
+  clear: both;
+}

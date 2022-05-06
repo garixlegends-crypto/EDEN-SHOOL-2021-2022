@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 10;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+header{
+    margin: auto;
+    width: 85%;
+}
+.div-1{
+    background-color: purple;
+    height: 200px;
+    width: 15%;
+    border-radius: 21% 40%;
+    border: solid;
+    text-align: center;
+ float: left;
+}
+.div-2{
+    margin: 5px;
+    background-color: blue;
+    height: 200px;
+    width: 15%;
+    border-radius: 7em 15px;
+    border: solid;
+    text-align: center;
+  float: left;
+}
+.div-3{
+    margin: 5px;
+    background-color: yellow;
+    height: 200px;
+    width: 13%;
+    border-radius: 50%;
+    border: solid;
+    text-align: center;
+  float: left;
+}
+.div-4{
+    margin: 5px;
+    background-color: khaki;
+    height: 200px;
+    width: 15%;
+    border-radius: 57px 7em;
+    border: solid;
+    text-align: center;
+    float: left;
+}
+.div-5{
+    margin: 5px;
+    background-color: red;
+    height: 200px;
+    width: 15%;
+    border-radius: 57px 7em;
+    border: solid;
+    text-align: center;
+    float: left;
+}
+#n1{
+    float: right;
+    margin: auto;
+    margin-right: 164px;
+}
+#n2{
+    float: right;
+    position: absolute;
+    margin-left: 47%;
+}
+#n3{
+    float: right;
+    margin-right: 173px;
+}
+#n4{
+    margin-left: 10%;
+}
+.clearfix{
+    clear: both;
+}
+/* on passe au class standards du jour */

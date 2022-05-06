@@ -1,0 +1,150 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Nokora:wght@900&display=swap');
+  .container {
+    display: block;
+    padding: 40px;
+    user-select: none;
+    margin: auto;
+    width: 30%;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 204px;
+    width: 250px;
+    background-color: #eee;
+  }
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .container input:checked ~ .checkmark:nth-child(2) {
+    background-color: red;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+  .checkmark {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 100%;
+    height: 200px;
+  }
+  .checkmark:hover {
+    opacity: 1;
+    
+  }
+  .checkmark:hover:after {
+    content: "";
+    display: block;
+    border-bottom-color: #000;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -12px;
+  }
+  .checkmark:hover::before {
+    content: "";
+    display: block;
+    border-bottom-color: #000;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -12px;
+    transform: rotate(45deg);
+  }
+  .checkmark:before, .checkmark:after{
+    position: absolute;
+    left: 110px;
+    content: ' ';
+    height: 200px;
+    width: 5px;
+    background-color: #333;
+    transform: rotate(-45deg);
+  }
+  .checkmark:before {
+    transform: rotate(45deg);
+  }
+  .checkmark:after {
+    transform: rotate(-45deg);
+  }
+  
+  .d-flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #radio-4 + label:before {
+    background: #8BC34A;
+    animation: unchecked-radio-4 .5s both;
+  } 
+  label{
+    margin: 50px;
+  }
+  label:before {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    background: gray;
+    box-shadow: rgb(0 0 0 / 12%) 0 0 0.8vw 0, rgb(0 0 0 / 24%) 0 0.8vw 0.8vw 0;
+    transition: all .2s;
+  }
+  label:hover {
+    background-color: orchid;
+  }
+  .radio:checked + label:after {
+    background: transparent;
+    transition: all .5s;
+    transform: scale(1);
+    padding: 50px;
+  }
+  label:hover::before {
+    content: "X";
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.5;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Nokora', sans-serif;
+  }
+  input[type="radio"]:checked+label::after{
+    content: "X";
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background: rgba(255, 255, 255, .5);
+    transform: scale(1);
+    background-color: red;
+  }
+  label:after {
+    content: "X";
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: rgba(255, 255, 255, .5);
+    transform: scale(0);
+    background-color: red;
+  }
+  

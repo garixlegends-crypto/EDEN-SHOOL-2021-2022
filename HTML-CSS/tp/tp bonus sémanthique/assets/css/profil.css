@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: 'Raleway', sans-serif;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+header{
+    top: 0;
+}
+.d-flex-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.d-flex-header ul{
+    display: flex;
+    font-size: 2rem;
+}
+.d-flex-header li{
+    margin: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+} 
+h1{
+    font-weight: 400;
+    font-size: 3rem;
+}
+h1 span{
+    font-weight: bold;
+}
+.top-position{
+    margin-top: 200px;
+}
+.element-1 h2{
+    font-size: 4rem;
+}
+.container{
+    margin: auto;
+    width: 73%;
+}
+.p-span  span:nth-child(1) {
+    font-weight: bolder;
+}
+.p-span  span:nth-child(2) {
+    font-weight: bolder;
+}
+.p-span  span:nth-child(3) {
+    font-style: italic;
+}
+.p-span span:nth-child(4){
+    vertical-align: super;
+    font-size: smaller;
+}
+.p-span span:nth-child(5){
+    font-size: smaller;
+    vertical-align: -webkit-baseline-middle;
+}
+.p-span span:nth-child(6){
+    text-decoration: underline;
+}
+p{
+    font-size: 2.2rem;
+}
+.p-span span:nth-child(7){
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Consolas, "Courier New", monospace;
+    white-space: normal;
+    word-wrap: normal;
+    word-break: initial;
+}
+.ligne{
+    background-color: gray;
+    height: 160px;
+    width: 20px;
+}
+.d-flex-ligne{
+    display: flex;
+    align-items: center;
+}
+.d-flex-ligne p{
+    margin: 30px;
+}
+pre{
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Consolas, "Courier New", monospace;
+    word-wrap: normal;
+    word-break: initial;
+}
+#number {
+    list-style-type: number;
+}
+.list-ord{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.list{
+    flex: 1 1 auto;
+}
+.alter-icon{
+    display: contents;
+}
+.alter-icon i{
+    font-size: 4rem;
+    color: red;
+    margin:  5px;
+}
+.icon{
+    margin-top: 130px;
+}
+.i-flex{
+   display: flex;
+}
+.button-main{
+    background-color: #f32853;
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    margin: 20px;
+}
+.button-black{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    height: 55px;
+    margin: 20px;
+}
+.button-black:hover{
+    background-color: #f32853;
+    color: white;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.d-flex-button{
+    display: flex;
+}
+.button-white{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    margin: 20px;
+    border: solid 1px;
+}
+.button-white:hover{
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.button-small-main{
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 120px;
+    margin: 20px;
+}
+.button-small-black{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 32px;
+    text-align: center;
+    width: 120px;
+    margin: 20px;
+}
+.button-small-main{
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 32px;
+    text-align: center;
+    width: 120px;
+    margin: 20px;
+}
+.button-small-white{
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 8px;
+    text-align: center;
+    width: 120px;
+    margin: 20px;
+    height: 55px;
+    border: solid 1px;
+}
+.button-fit-main{
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 270px;
+    margin: 20px;
+}
+.button-fit-black{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 270px;
+    margin: 20px;
+}
+.button-fit-white{
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 270px;
+    margin: 20px;
+    border: solid 1px;
+}
+.d-fex-button-main:nth-child(2){
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.main-button-flex{
+    display: flex;
+}
+.container-table{
+    text-align: left;
+    width: 80%;
+    display: table;
+}
+.container-table tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.container tr:nth-child(even) {
+    background-color: white;
+}
+
+.button-main-big{
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 35px 32px;
+    text-align: center;
+    width: 170px;
+    margin: 20px;
+}
+.button-fit-black-heigh {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-align: center;
+    width: 270px;
+    height: 40px;
+    margin: 20px;
+}
+.button-fit-white-heigh{
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-align: center;
+    width: 270px;
+    height: 40px;
+    margin: 20px;
+    border: solid 1px;
+}
+.d-flex-button-icon{
+    display: flex;
+    align-items: center;
+}
+.button-small-white-play{
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 6px 25px;
+    text-align: center;
+    width: 120px;
+    margin: 20px;
+    border: solid 1px;
+}
+.button-gray{
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    margin: 20px;
+}
+.button-gray-color{
+    background-color: gray;
+    border: none;
+    color: gainsboro;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    margin: 20px;
+}
+#fname, #lname {
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+    width: 48%;
+    background-color: #90909013;
+    border: solid darkgray;
+}
+label{
+    margin: 10px;
+}
+select{
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+    width: 98%;
+    background-color: #90909013;
+    border: solid darkgray;
+    margin: 20px;
+}
+.d-flex-checker{
+    display: flex;
+    justify-content: space-between;
+}
+.checker-d-flex{
+    display: flex;
+}
+.checker{
+    margin: 20px;
+}
+.checker-box{
+    margin: 20px;
+    width: 45%;
+}
+#story{
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    background-color: #90909013;
+}
+.button-main:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.d-flex-pic {
+    display: flex;
+}
+.d-flex-pic img{
+    border-radius: 10px;
+    width: 33%;
+    height: 325px;
+    margin: 5px;
+}
+.d-flex-main-pic{
+    background-image: url(../img/pic/pic01.jpg ), url(../img/overlay/overlay.png);
+    color: white;
+    padding: 40px;
+    height: 500px;
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 15px;
+}
+.left-image{
+    font-weight: bolder;
+}
+.left-image img{
+    float: left;
+}
+.right-image{
+    font-weight: bolder;
+}
+.right-image img{
+    float: right;
+}
+footer{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: lightgray;
+    color: gray;
+    height: 300px;
+}
+footer i{
+    margin: 30px;
+    padding-top: 100px ;
+    font-size: 4rem;    
+}

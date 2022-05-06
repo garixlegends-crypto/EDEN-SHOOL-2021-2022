@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h1:nth-last-of-type(1){
+    display: none;
+}
+h1:nth-last-of-type(2){
+    display: none;
+}
+h1:nth-last-of-type(3){
+    display: none;
+}
+
+h1{
+    background-color: green;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    background-color: green;
+    border-radius: 60% 10%;
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+}
+@media screen and (min-width: 776px) and (max-width: 991px){
+    h1:nth-last-of-type(4){
+        display: none;
+    }
+    h1:nth-last-of-type(3){
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+    }
+    div{
+        background-color: yellow;
+        border-radius: 60% 10%;
+        width: 44%;
+        height: 200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    h1:nth-last-of-type(3){
+        display: none;
+    }
+    h1:nth-last-of-type(2){
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:orange;
+    }
+    div{
+        background-color: orange;
+        border-radius: 50%;
+        width: 44%;
+        height: 200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    h1:nth-last-of-type(1){
+        display: none;
+    }
+    h1:nth-last-of-type(2){
+        display: none;
+    }
+    h1:nth-last-of-type(2){
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#e3b669;
+    }
+    div{
+        background-color: #e3b669;
+        border-radius: 50%;
+        width: 44%;
+        height: 200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+}

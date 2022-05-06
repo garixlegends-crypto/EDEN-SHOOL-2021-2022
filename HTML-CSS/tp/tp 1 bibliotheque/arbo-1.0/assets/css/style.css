@@ -1,0 +1,43 @@
+
+body{
+    margin: auto;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-attachment: fixed;
+}
+h1{
+    font-size: 3em;
+}
+.livre-js{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.chapt-2,.chapt-3{
+    margin-top: 130px;
+}
+section{
+    margin: 28px;
+}
+.livre-js img{
+    width: 250px;
+}
+
+p{
+    text-align: center;
+}

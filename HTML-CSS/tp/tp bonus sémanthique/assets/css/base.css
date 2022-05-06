@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: 'Raleway', sans-serif;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/* on passe au class standards du jour */
+header{
+    background-image: url(../img/baniere/banner.jpg ), url(../img/overlay/overlay.png);
+    color: white;
+    padding: 40px;
+    height: 500px;
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+h1{
+   font-weight: 400;
+   font-size: 2rem;
+}
+h1 span{
+    font-weight: bold;
+}
+.d-flex-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.d-flex-ul ul{
+    display: flex;
+}
+.d-flex-nav li{
+    margin: 20px;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.d-flex-nav a{
+    text-decoration: none;
+    color: white;
+} 
+.sem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.sem h2{
+    font-size: 4rem;
+}
+.button{
+    height: 60px;
+    width: 25%;
+    background-color: #f32853;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.section-1{
+    margin: auto;
+    width: 75%;
+    font-weight: 900;
+}
+.section-1 h2{
+    font-size: 4rem;
+    width: 95%;
+}
+.d-flex-h2-p{
+    display: flex;
+    align-items: baseline;
+    margin: auto;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    margin: 75px;
+    width: 100%;
+}
+.h2-p{
+    width: 75%;
+}
+.section-2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: lightgray;
+}
+.section-2 h2{
+    font-size: 4rem;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    background-color: white;
+    margin: 30px;
+}
+.d-flex-card{
+    display: flex;
+    justify-content: center;
+}
+.button-main{
+    background-color: #f32853;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+}
+
+.button-black{
+    background-color: #222222;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+}
+.d-flex-button{
+    display: flex;
+    justify-content: center;
+}
+.section-3{
+    margin: auto;
+    width: 75%;
+}
+.section-3 h2{
+    font-size: 4rem;
+}
+.d-flex-border img{
+    border-radius: 50%;
+    border: 9px solid gainsboro;
+}
+.d-flex-border {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.card-border{
+    padding: 30px;
+    display: flex;
+}
+.card-border:nth-child(2){
+    flex-direction: row-reverse;
+}
+.card-border:nth-child(4){
+    flex-direction: row-reverse;
+}
+.margin-text{
+    margin: 10px;
+}
+.text-titre{
+    padding: 5px;
+}
+.text-sous{
+    font-weight: bold;
+}
+.display-block-h2{
+    background-image: url(../img/baniere/banner.jpg), url(../img/overlay/overlay.png);
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center -20%;
+    color: white;
+}
+.top-titre{
+    padding-top: 50px;
+}
+.button-footer{
+    background-color: #f32853;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+footer{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: lightgray;
+    color: gray;
+    height: 300px;
+}
+footer i{
+    margin: 30px;
+    padding-top: 100px ;
+    font-size: 4rem;    
+}

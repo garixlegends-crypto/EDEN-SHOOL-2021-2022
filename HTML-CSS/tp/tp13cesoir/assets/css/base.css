@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    background-color: #A0C4B6 ;
+    font-family: sans-serif;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/* on passe au class standards du jour */
+.container{
+    margin: auto;
+    width: 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+header{
+    background-image: url(../img/woddPlank.jpg);
+    padding: 15px;
+    margin-top: 20px;
+    font-family: 'Caveat Brush', cursive;
+    border-top-right-radius: 43px 35px;
+    border-top-left-radius: 25px;
+}
+
+.d-flex-soir{
+    display: flex;
+    justify-content: space-around;
+}
+.d-flex-soir h1{
+    text-transform: uppercase;
+}
+h1 span{
+    position: relative;
+    bottom: 10px;
+}
+h1 span::after{
+    content: "-";
+    position: absolute;
+    margin-left: -90%;
+    top: 5px;
+    font-size: 38px;
+}
+li::after {
+    text-decoration: underline ;
+}
+.d-flex-soir ul{
+    display: flex;
+}
+.d-flex-soir li{
+    margin: 20px;
+    list-style: none;
+    font-size: 2rem;
+}
+.ligne-red{
+    width: 40px;
+    height: 18px;
+    background-color: rgb(255 0 118);
+    margin: auto;
+}
+.img-border{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.img-border img{
+    height: 300px;
+    width: 30%;
+}
+.triangle{
+    border-color: transparent rgb(255 0 118 / 50%) transparent transparent;
+    border-style: solid;
+    border-width: 0px 200px 200px 200px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    margin-right: 13%;
+    text-align: center;
+    top: 20%;
+}
+.fleche{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(255 0 118);
+    margin: auto;
+    margin-top: 40px;
+}
+main{
+    background-image: url(../img/memphis-mini.png);
+}
+main h2{
+    margin: auto;
+    font-size: 4rem;
+}
+.d-flex-courgette{
+    display: flex;
+    text-align: center;
+}
+.story{
+    margin: auto;
+    width: 50%;
+}
+.story p{
+    margin: auto;
+    width: 75%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.story span {
+    color: rgb(255 0 118);
+}
+.d-flex-courgette-reverse{
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+.story img{
+    width: 30%;
+    height: 120px;
+}
+
+.d-flex-courgette-reverse img:nth-child(2) {
+    width: 100%;
+    height: 550px;
+}
+.d-flex-courgette img:nth-child(2){
+    width: 100%;
+    height: 550px;
+}
+.with-100{
+    width: 100%;
+}
+footer{
+    background-image: url(../img/memphis-mini.png);
+    padding: 20px;
+}
+footer h1{
+    font-family: 'Caveat Brush', cursive;
+}
+.d-flex-footer-h1{
+    display: flex;
+    text-transform: uppercase;
+}
+.street{
+    margin-top: 50px;
+    font-weight: bold;
+}
+.d-flex-font{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.font{
+    font-size: 4rem;
+    color: deeppink;
+}

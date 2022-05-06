@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: sans-serif;
+    
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+
+
+.container-header{
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+h1{
+    font-family: 'Caladea', serif;
+    font-weight: normal;
+    font-size: 4rem;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    margin: 5px;
+    list-style: none;
+}
+.d-image-plate {
+    background-image: url(../img/plate.jpg);
+}
+.d-flex-plate{
+    display: flex;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    text-align: end;
+}
+.d-image-plate{
+    background-image: url(../img/plate.jpg);
+    background-repeat: no-repeat;
+    width: 55%;
+}
+h2{
+    text-transform: uppercase;
+}
+.d-flex-background {
+    padding-top: 150px;
+    width: 60%;
+    margin: auto;
+}
+.d-flex-background hr{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.d-flex h2{
+    font-size: 4rem;
+    font-family: 'Caladea', serif;
+    font-weight: normal;
+}
+.text{
+    margin: auto;
+    width: 45%;
+}
+.d-flex-reverse{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.d-flex img{
+    width: 50%;
+}
+.d-flex-reverse img{
+    width: 50%;
+}
+.black-block{
+    background-color: black;
+    width: 35%;
+    height: 20px;
+    display: flex;
+}
+.black-with-fonwesome{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.black-with-fonwesome h3{
+    margin: 10px;
+}
+.black-with-fonwesome i{
+    font-size: 10px;
+}
+.background-text-center{
+    background-image: url(../img/plan.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 50%;
+    height: 120px;
+    margin-top: 100px;
+}
+.text-center{
+    padding-top: 30px;
+}
+.background-text-center h3{
+    margin: auto;
+}
+.background-text-center p{
+    margin: auto;
+    font-size: 8px;
+    font-weight: bolder;
+}

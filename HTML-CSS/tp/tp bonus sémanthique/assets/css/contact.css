@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: 'Raleway', sans-serif;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+header{
+    top: 0;
+}
+.d-flex-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    font-size: 2rem;
+}
+li{
+    margin: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+} 
+h1{
+    font-weight: 400;
+    font-size: 3rem;
+}
+h1 span{
+    font-weight: bold;
+}
+
+.top-position{
+    margin-top: 200px;
+}
+.container{
+    margin: auto;
+    width: 85%;
+    font-weight: bolder;
+}
+h2{
+    font-size: 4rem;
+}
+.background-route{
+    background-image: url(../img/pic/pic01.jpg ), url(../img/overlay/overlay.png);
+    color: white;
+    padding: 40px;
+    height: 500px;
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 15px;
+}
+.button-footer{
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+footer{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: lightgray;
+    color: gray;
+    height: 300px;
+}
+footer i{
+    margin: 30px;
+    padding-top: 100px ;
+    font-size: 4rem;    
+}

@@ -1,0 +1,81 @@
+select#cat option[value="salade"]   {
+    height: 149px;
+    width: 35%;
+    background-image: url(../img/base_epinards.jpg);
+    background-repeat: no-repeat;
+
+}
+
+select#cat option[value="salade-1"]   {
+    height: 149px;
+    width: 35%;
+    background-image: url(../img/base_mache.jpg);
+    background-repeat: no-repeat;
+}
+
+select#cat option[value="salade-2"]   {
+    height: 149px;
+    width: 35%;
+    background-image: url(../img/base_pates.jpg);
+    background-repeat: no-repeat;
+}
+
+select#cat option[value="salade-3"]   {
+    height: 149px;
+    width: 35%;
+    background-image: url(../img/base_pousses.jpg);
+    background-repeat: no-repeat;
+}
+
+select#cat option[value="salade-4"]   {
+    height: 149px;
+    width: 35%;
+    background-image: url(../img/base_quinoa.jpg);
+    background-repeat: no-repeat;
+}
+
+select#cat option[value="salade-5"]   {
+    height: 149px;
+    width: 35%;
+    background-image: url(../img/base_riz.jpg);
+    background-repeat: no-repeat;
+}
+.section-1 {
+    background: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    height: 105vh;
+    width: 81vw;
+    font-family: sans-serif;
+    color: #FFF;
+}
+
+.select {
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  width:250px;
+  height:40px;
+  background: none;
+  background-color: none;
+}
+
+
+
+option:checked {
+    box-shadow: 0 0 10px 100px yellow inset;
+ }
+select#cat{
+    border: none;
+    overflow: unset;
+    width: 45%;
+    
+}
+
+.mystyle {
+    background-color: yellow;
+  }
+  

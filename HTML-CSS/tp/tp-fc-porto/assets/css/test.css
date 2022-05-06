@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+}
+.return{
+    width: 20%;
+    height: 100px;
+    background-color: black;
+}
+.log-form{
+    display: grid;
+    justify-items: center;
+    border: 1px solid lightgray;
+    width: 40%;
+    margin: auto;
+      margin-top: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+h2:hover{
+    color: #0AA9ED;
+    border-bottom: 1px #0AA9ED solid;
+}
+form{
+    width: 75%;
+}
+input{
+    width: 65%;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+      margin-top: auto;
+    margin-top: 10px;
+}
+.d-grid{
+    display: flex;
+    grid-gap: 30px;
+}
+.project{
+    display: flex;
+    grid-gap: 30px;
+    padding: 15px;
+}
+.border-net{
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 10px;
+}
+.border-net:hover{
+    background-color:#0AA9ED ;
+    border: 1px #0AA9ED solid;
+    color: white;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&family=Poppins:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+    
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: 'Gluten', cursive;
+    background-image: url(../img/fond_jaune.png);
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+}
+li{
+    color: #000000;
+    margin: 30px;
+    font-size: 3rem;
+}
+/* on passe au class standards du jour */
+.container{
+    width: 850px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+h1{
+    font-family: 'Rubik Beastly', cursive;
+    margin: 25px;
+    font-size: 7rem;
+}
+
+h2{
+    font-family: 'Gluten', cursive;
+    font-size: 5rem;
+}
+.ombre{
+    background-image: url(../img/sanfrancisco.jpg);
+    height: 200px;
+}
+.background {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+.n4{
+    text-align: center;
+}
+.button{
+    background-color: red;
+    height: 40px;
+    width: 17%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.taille{
+    padding-top: 112px;
+}
+.epingle{
+    display: flex;
+    align-items: center;
+}
+h3{
+    font-size: 3rem;
+}
+.exampl1 {
+    width: 50%;
+    word-spacing: 20px;
+    background-color: gray;
+}
+
+.border img{
+    width: 70%;
+    border: solid;
+}

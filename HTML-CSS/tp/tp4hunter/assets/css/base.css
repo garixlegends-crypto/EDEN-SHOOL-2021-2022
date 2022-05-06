@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    background-image: url(../img/fond.png);
+    font-family: sans-serif;
+}
+
+/* on passe au class standards du jour */
+header{
+    background-color: #27032d;
+    margin: auto;
+    width: 50%;
+    height: 200px;
+    padding: 30px;
+}
+.logoxli{
+    display: flex;
+    align-items: center;
+}
+.hunter img{
+    width: 50%;
+}
+.logoxli nav{
+    display: flex;
+}
+.logoxli li{
+    margin: 30px;
+    list-style: none;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+}
+main{
+    margin: auto;
+    background-color: white;
+    height: 1030px;
+    width: 50%;
+}
+.d-flex-hunter{
+    display: flex;
+    align-items: flex-start;
+}
+h1{
+    font-size: 2em;
+    margin: auto;
+    color: #27032d;
+    font-family: 'Luckiest Guy', cursive;
+}
+.img-hunter img{
+    border-style: none;
+    width: 30%;
+    margin-top: 23px;
+}
+.img-hunter{
+    margin: auto;
+    width: 90%;
+}
+.more{
+    background-color: #27032d;
+    color: white;
+    width: 15%;
+    height: 40px;
+    float: right;
+    text-align: center;
+    padding-top: 7px
+}
+footer a{
+    color: white;
+}
+footer{
+    text-align: center;
+}
+footer img{
+    height: 50px;
+}

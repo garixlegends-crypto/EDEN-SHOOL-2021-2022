@@ -1,0 +1,29 @@
+header{
+    background-color: #ffffff;
+    border: 1px solid black;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+  .div1 {
+    background: red;
+    width: 50%;
+    height:500px;
+    float:left;
+  }
+  
+  .div2 {
+    width: 50%;
+    height:500px;
+    background-color:#FFA500 ;
+    float:left;
+  }
+  
+  .div3 {
+    background: green;
+
+  }
+  

@@ -1,0 +1,33 @@
+header{
+    background-color: #ffffff;
+    border: 1px solid black;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .div2,.div3,.div4{
+    height: 200px;
+  }
+
+  .div1 {
+    background: red;
+  }
+  
+  .div2 {
+    background: yellow;
+    float: left;
+    width: 15%;
+  }
+  
+  .div3 {
+    background: green;
+    float: left;
+    width: 70%;
+  }
+  .div4 {
+    background: purple;
+    width: 15%;
+    float: right;
+  }

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: sans-serif;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/* on passe au class standards du jour */
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.d-flex-logo{
+    display: flex;
+    align-items: center;
+}
+.d-flex-logo img{
+    width: 3%;
+    margin: 50px;
+}
+h1{
+    margin: auto;
+    font-size: 4em;
+}
+.d-flex-logo p{
+    color: deeppink;
+}
+.display-telephone {
+    background-image: url(../img/aide.png);
+    background-repeat: no-repeat;
+}
+.display-telephone p {
+    margin: auto;
+    width: 70%;
+}
+.d-flex-telephone h2{
+    color: #01B0F0;
+    font-size: 4rem;
+}
+.display-telephone {
+    color: #01B0F0;
+}
+ 
+.d-flex-logo img{
+    width: 10vh;
+    height: 10vh;
+    margin: 50px;
+}
+
+.article{
+    background-color: #01B0F0;
+    width: 97%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+.article p{
+    margin: auto;        
+
+}
+.panier{
+    background-color: #01B0F0;
+    width: 97%;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    color: white;
+}
+.panier p{
+    margin: auto;
+    width: 75%;
+}
+
+.d-flex-ul nav {
+      background-color: #01B0F0;
+    color: white;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+  
+.d-flex-ul  nav ul {
+    display: flex;
+    width: 90%;
+    list-style-type: none;
+}
+  
+.d-flex-ul  nav ul li {
+    flex-grow: 1;
+    flex-shrink: 1 auto;
+    flex-basis: 100%;
+}
+.d-flex-ul ul{
+    margin: auto;
+}
+.d-flex-ul  nav ul li a {
+    text-decoration: none;
+}
+.d-flex-ul ul li:hover {
+    background-color: #FF358B;
+}
+.background-h2{
+    background-image: url(../img/azzaro-pub.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 87vh;
+    margin: auto;
+    width: 100%;
+}
+
+.background-h2 h2{
+    margin: auto;
+    font-size: 8rem;
+    text-align: end;
+    padding-top: 600px;
+    font-family: 'Italianno', cursive;
+}
+.vertical-align {
+    padding: 1px;
+    height: 200px;
+    background-color: lightgray;
+}
+.d-flex-carte{
+    display: flex;
+}
+.carte1{
+    width: 60%;
+    padding: 10px;
+}
+.carte{
+    padding: 10px;
+}
+.d-flex-icon{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.d-flex-icon img{
+    width: 15%;
+}
+.d-flex-carte h2{
+    color: #01B0F0;
+}
+.background-robe{
+    background-image: url(../img/fond.png);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.d-flex-robe{
+    display: flex;
+}
+
+
+.plan-background{
+    width: 25%;
+    box-shadow: 5px 5px 30px black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.plan-background h3{
+    text-align: center;
+}
+.plan-background h3{
+   margin: auto;
+}
+h4{
+    margin: auto;
+    width: 85%;
+    text-align: end;
+}
+.background-image-ombre{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #01B0F0;
+}
+
+footer p{
+    margin: auto;
+    width: 90%;
+    font-size: 2rem;
+    margin-top: 35px;
+
+}

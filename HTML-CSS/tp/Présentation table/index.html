@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>base html-css</title>
+        <!-- librairie-->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- css perso-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+    </head>
+    <body>
+        <!--Nous allons commencer a faire un tableau pour vous presenter
+            a quoi sers l'element table-->
+        <h1>Présentation tableau </h1>
+        <!--Les principaux balise dans un tableau en html et css example -->
+        <!--table peut représenter un tableau de données ou plus parlant des 
+             information affirmer sur un tableau -->
+       <div class="d-flex-table-pre">
+            <table>
+            <!-- <tr> permet de faire une ligne en cellule dans un tableau -->
+                <tr>
+                    <th>Présentation</th>
+                    <th>Eleve</th>
+                    <th>nombre de pc</th>
+                </tr>
+            <!-- Je vous montre combien d'eleve et sous linux et les ordinateurs disponible -->    
+            <!-- nouvelle ligne pour le nombre de pc et d'eleve -->    
+                <tr>
+                    <th>Les pc sous linux</th>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Les pc sous windows </th>
+                    <td>10</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>Les pc sous mac </th>
+                    <td>20</td>
+                    <td>4</td>
+                </tr>
+            </table>
+            <!-- si vous avez vu le probleme vous avez surement a quoi sert un tableau -->
+            <!-- les tableau sont principalement utilisé pour faire des article de boutique en ligne  -->
+                <pre>
+                    &lt;table>
+                            &lt;tr>
+                                &lt;th>Présentation&lt;/th>
+                                &lt;th>Eleve&lt;/th>
+                                &lt;th>nombre de pc&lt;/th>
+                            &lt;/tr>
+                            &lt;tr>
+                                &lt;th>Les pc sous linux&lt;/th>
+                                &lt;td>5&lt;/td>
+                                &lt;td>4&lt;/td>
+                            &lt;/tr
+                            &lt;tr>
+                                &lt;th>Les pc sous windows&lt;/th>
+                                &lt;td>10&lt;/td>
+                                &lt;td>15&lt;/td>
+                            &lt;/tr
+                            &lt;tr>
+                                &lt;th>Les pc sous mac&lt;/th>
+                                &lt;td>20&lt;/td>
+                                &lt;td>4&lt;/td>
+                            &lt;/tr
+                    &lt;/table>   
+            </div>       
+       </pre>
+       <h2>Tableau a faire</h2>
+      <div class="margin-auto">
+        <table>
+            <!--l'element thead définit la tete des colone d'un tableau-->
+            <caption>Tp tableau</caption>
+            <tbody>
+                <thead>
+                    <tr>
+                        <th colspan="1" scope="col">votre travail</th> 
+                        <th colspan="2" scope="col">Salaire</th> 
+                        <th scope="col">Votre maison</th> 
+                        <th colspan="2" scope="col">L'animal de compagnie</th> 
+                        <th scope="col">Votre pays</th> 
+                    </tr>
+                    <tr>
+                        <td >Développeur</td>
+                        <td colspan="2">2000&pound;</td>
+                        <td >2 chambres || 3 pièces</td>
+                        <td colspan="2">Chat</td>
+                        <td>La france</td>
+                    </tr>
+                    <tr>
+                        <td>Maçon</th>
+                        <td colspan="2">1200&pound;</td>
+                        <td> 5 chambre || 10 pièces</td>
+                        <td colspan="2" >chien</td>
+                        <td>portugal</td>
+                    </tr>
+                    <tr>
+                        <td>pizzaiolo </td>
+                        <td colspan="2" rowspan="2">800&pound;</td>
+                        <td >2 chambre || 1 piece</td>
+                        <td colspan="2">hamster</td>
+                        <td >italie</td>
+                    </tr>
+                    <tr class="ok">
+                        <td>PAELLA PEPITO</td>
+                        <td >1 chambre || 1 piece</td>
+                        <td colspan="2">souris</td>
+                        <td>espagne</td>
+                    </tr>
+                </thead>   
+                <tfoot>
+                    <tr>
+                        <th scope="col">votre travail</th> 
+                        <th colspan="2" scope="col">Salaire</th> 
+                        <th scope="col">Votre maison</th> 
+                        <th colspan="2" scope="col">L'animal de compagnie</th> 
+                        <th  scope="col" >Votre pays</th> 
+                    </tr>
+                </tfoot>
+            </tbody>    
+        </table>
+        
+       </div> 
+    </body>
+</html>

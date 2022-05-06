@@ -1,0 +1,23 @@
+let loading_screen = document.querySelector(".loading_screen");
+
+console.log(loading_screen);
+// Do this instead
+setTimeout(function () {
+  loading_screen.style.display = "none";
+}, 3500);
+let tablo = [
+  "DemonCastle.png", // url("assets/img/loadingscreen/
+  "Island.png",
+  "Night.png",
+  "Plain.png",
+  "Universe.png",
+  "World.png"
+];
+let rand = Math.floor(Math.random() * tablo.length);
+console.log(rand);
+console.log(tablo[rand]);
+let imgrandome = "assets/img/loadingscreen/" + tablo[rand];
+
+loading_screen.style.background = "url(" + imgrandome + ") no-repeat";
+loading_screen.style.backgroundSize = "cover";
+loading_screen.style.backgroundPosition = "center";

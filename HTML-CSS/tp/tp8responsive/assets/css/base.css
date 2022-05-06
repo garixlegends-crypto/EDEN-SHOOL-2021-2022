@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arvo', serif;
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/* on passe au class standards du jour */
+header img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+header li{
+    list-style: none;
+}
+header nav{
+    background-color: #f9a02c;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+}
+header ul{
+    padding: 5px;
+}
+header li{
+    padding: 10px;
+}
+
+header  li:hover{
+    background-color: #FFC368;
+    display:block
+}
+#tablette{
+    display: none;
+}
+#pc{
+    display: none;
+}
+.container{
+    margin: auto;
+    width: 90%;
+}
+h1{
+    color: #f9a02c;
+    margin: auto;
+}
+hr{
+    border-color: #f9a02c;
+}
+main{
+    background-color: black;
+}
+main img{
+    width: 90%;
+}
+.pad{
+    padding: 15px;
+}
+h2{
+    color: #f9a02c;
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+footer img{
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+footer span {
+    font-weight: bolder;
+}
+.tab-pc{
+    display: none;
+}
+
+@media screen and (min-width: 720px ) { 
+    #phone{
+        display: none;
+    }
+    #tablette{
+        display: block;
+    }
+    main img {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .tab-pc{
+        display: block;
+        background-color: #FFC368;
+        color: black;
+        padding: 15px;
+    }
+    .tab-pc h2{
+        color: black;
+    }
+}
+@media screen and (min-width: 1200px ) { 
+    #phone{
+        display: none;
+    }
+    #tablette{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    header nav{
+        height: 65px;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-around;
+        pointer-events: none;
+    }
+    main{
+        display: flex;
+    }
+    .tab-pc{
+        width: 30%;
+    }
+    .pad{
+        width: 70%;
+    }
+
+}

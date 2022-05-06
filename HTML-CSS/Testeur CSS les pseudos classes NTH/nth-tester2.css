@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font:15px/1.4 Sans-Serif;
+    background-color: #1B2D2A;
+}
+.selected{background:#e18728;
+    color:#000;
+    box-shadow:0 0 5px #000;
+    display:inline-block;
+    padding:3px 5px;
+    border-radius:8px;
+}
+#page-wrap{
+    width:960px;
+    margin:50px auto;
+    overflow:hidden;
+}
+.left,.right{
+    width:50%;
+    float:left;
+}
+.left{
+    padding-right:30px;
+}
+h1{
+    text-align:center;
+    color:#e18728;font-size:60px;margin:30px 0 10px;
+}
+h2{
+    font-weight:400;
+    margin:5px 0;
+    color:#fff;
+}
+h3{margin:50px 0 10px;
+}
+p{
+    margin:0 0 10px;
+}
+.recipies-list li{
+    margin:10px 0;
+}
+.recipies-list a{
+    color:#fff;
+    text-decoration:none;
+    padding-left:5px;
+    border-left:4px solid transparent;
+}
+.recipies-list li.active a{
+    color:#e18728;
+}
+.recipies-list a:hover,.recipies-list a:focus{
+    border-left:4px solid #e18728;
+}
+input[type=text],select{
+    font:inherit;
+    padding:4px;border:0;
+}
+#equation{
+    width:60px;
+}
+.pink{
+    color:#ff0080;
+}
+.instructions{
+    color:#fff;
+}
+ul{
+    list-style:none;
+}
+#list{
+    padding-left:10px;
+}
+#list li{
+    margin:0 0 6px;
+    color:#fff;
+    padding:2px 10px;
+    background:rgba(255,255,255,.1);
+    border-radius:8px;
+}#list ul{
+    margin-top:2px;
+}
+#list li div,#list li span{
+    display:inline-block;
+    padding:3px 5px 5px;
+    border-radius:8px;
+    color:#fff
+}
+#list{
+    font-family:monospace;
+}
+#list:before,#list ul:before{
+    content:"<ul>";
+    color:#fff;
+}
+#list:after,#list ul:after{
+    content:"</ul>";
+    color:#fff;
+}
+#list:before,#list:after{
+    padding-left:10px;
+    font-weight:700;
+    line-height:2.5em;
+}
+#list ul{
+    margin:2px 0 5px 30px;
+    padding:5px 10px 5px 5px;
+    background:#707070;
+    border-radius:8px;
+}
+#list li{
+    font-size:.9rem;
+}
+#list ul li{
+    margin:0 0 6px 35px;
+    background:#424344;
+}
+#list li:before{
+    content:"<li>";
+}
+#list li:after{
+    content:"</li>";
+}
+#list div,#list ins{
+    border-radius:8px;
+    color:#fff;
+    display:inline-block;
+    padding:3px 3px 5px!important;
+}
+#list ins{
+    text-decoration:none;
+}
+#list div:after{
+    content:"<div>";
+    color:#fff;
+}
+#list ins:after{
+    content:"<ins>";
+    color:#fff;
+}
+#el option{
+    width:2.2em;
+}
+#kind option{
+    width:11em;
+}
+#noscript{
+    margin:20px 40px 40px;
+    padding:5px;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 0 10px 10px #e18728;
+    color:#a30000;
+}

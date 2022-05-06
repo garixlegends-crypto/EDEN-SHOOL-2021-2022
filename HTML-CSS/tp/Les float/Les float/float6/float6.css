@@ -1,0 +1,87 @@
+header{
+    background-color: #ffffff;
+    border: 1px solid black;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .haut1,.haut2,.haut3{
+    height: 200px;
+  }
+
+  .haut1 {
+    background: #203562;
+    float: left;
+    width: 15%;
+  }
+  
+  .haut2 {
+    background-color: #3e588f;
+    float: left;
+    width: 70%;
+  }
+  
+  .haut3 {
+    background: #203562;
+    width: 15%;
+    float: right;
+  }
+  .menu{
+    background: #0b5269;
+  }
+  .a1,.b2{
+    width: 45%;
+    height: 200px;
+  }
+  .a1{
+    background-color: #203562;
+    float: right;
+  }
+  .b2{
+    background-color: #c0c5cd;
+    float: right;
+  }   
+  .right{
+    background-color: #446878;
+    float: left;
+    height: 500px;
+    width: 10%;
+  }
+  .slide{
+    background-color: #314a52;
+    height: 345px;
+  }
+  .c1,.d1,.e1,.f1{
+      float: left;
+      width: 15%;
+  }
+  .c1,.d1{
+    width: 22%;
+  }
+  .e1,.f1{
+    width: 23%;
+  }
+  .c1,.d1,.e1,.f1{
+    height: 155px;
+  }
+  .c1{
+      background-color: #c0c5cd;
+  }
+  .d1{
+    background-color: #203562;
+  }
+  .e1{
+      background-color: #c0c5cd;
+  }
+  .f1{
+      background-color: #203562;
+  }
+  footer{
+      background-color: #0b5269;
+      height: 100px;
+  }
+  .clear{
+      clear: both;
+  }

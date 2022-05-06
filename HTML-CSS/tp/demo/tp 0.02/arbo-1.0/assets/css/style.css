@@ -1,0 +1,37 @@
+body{ /*selecteur = balise*/
+    width: 70%; /*largeur de la page*/
+    margin: 0 auto; /*centrer en largeur*/
+    background-color: lightgray;
+}
+
+main{
+    background-color: lightblue;
+}
+h2{
+    font-size: 20px; /*taille de la police*/
+}
+p{
+    font-family: cursive;
+}
+.class{/*Selecteur = .class*/
+    color: red;
+}
+#id-1{
+    text-decoration: underline;/*doudignier*/
+}
+#id-2{
+    border: 1px solid #000;/*doudignier*/
+}
+#id-3, #id-4{
+    color: #fff;
+}
+
+#id-3{
+    background-color: lightgrey;/*doudignier*/
+}
+#id-4{
+    background-color: lightpink;/*doudignier*/
+}
+#section-3 #id-3{
+    padding: 20%;
+}

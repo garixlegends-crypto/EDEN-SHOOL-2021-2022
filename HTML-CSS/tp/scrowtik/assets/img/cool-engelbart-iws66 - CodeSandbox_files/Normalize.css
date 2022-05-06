@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script  type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"></script>
+    <script  type="text/javascript" src="https://codesandbox.io/static/js/banner.be879265d.js"></script>
+
+    <style type="text/css">
+      #title,
+      #glyphs p {
+        font-family: "Sketch Gothic School";
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/Normalize.css" />
+    <!--Normalize css -->
+    <link rel="stylesheet" href="../assets/css/Base.css" />
+    <link rel="stylesheet" href="../assets/css/css_loading.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preload" as="script" href="assets/js/__loading__.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>pchitpchit</title>
+  </head>
+  <body>
+    <div class="loading_screen">
+      <!-- bar de chargement-->
+      <div class="back_load">
+        <div class="loading"></div>
+        <p></p>
+      </div>
+    </div>
+
+    <header id="">
+      <div id="head" class="container"><h1>Mercador</h1></div>
+    </header>
+
+    <main id="">
+      <div id="backback">
+        <div id="bloc_quibouge">
+          <div class="perso_quimarche"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <article id="back_forg">
+        <div>
+          <a href="./views/foregeron.html">
+            <img
+              src="assets/img/personnage_payer/tête/idl/forge_idl.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <h3>Forgeron</h3>
+          <span>Description :</span>
+          <i>
+            Le forgeron peut te <br />
+            fabriquer tout type d'equipement
+          </i>
+        </div>
+
+        <div class="clear"></div>
+      </article>
+      <!-- Forgeron-->
+      <!--sprit du Forgeron-->
+      <article id="back_march">
+        <a href="./views/Marchand.html">
+          <img
+            src="assets/img/personnage_payer/tête/idl/marchand_idl.png"
+            alt=""
+        /></a>
+        <h3>Marchand</h3>
+        <span>Description :</span>
+        <i>
+          Le marchand et une <br />
+          personne qui voyage beaucoup et <br />
+          vend des petits babiole et de la <br />
+          nouriture
+        </i>
+        <p></p>
+      </article>
+      <!-- Marchand -->
+      <!--sprit du Marchand -->
+      <article id="back_mdc">
+        <a href="./views/medecin.html">
+          <img src="assets/img/personnage_payer/tête/idl/med_idl.png" alt=""
+        /></a>
+        <h3>Medecin</h3>
+        <span>Description :</span>
+        <i
+          >Le medecin te permeteras d'acheter des soins et vendre des herbes
+          medicinale</i
+        >
+      </article>
+      <!-- Medecin-->
+      <!--sprit du Medecin-->
+      <article id="back_maitreDarme">
+        <a href="./views/maitre_arm.html">
+          <img
+            src="assets/img/personnage_payer/tête/idl/maitre_simple.png"
+            alt=""
+        /></a>
+        <h3>Maitre D'arme</h3>
+        <span>Description :</span>
+        <i>
+          le maitre d'arme et l'un des plus grand soldat pour up de classe ou
+          devenir un chevalier il faut allez le voir il vous entrainera
+        </i>
+      </article>
+      <!-- Maitre D'arme-->
+      <!--sprit du Maitre D'arme-->
+      <article id="back_sorcier">
+        <a href="./views/sorcier.html">
+          <img src="assets/img/personnage_payer/tête/idl/sorc_idl.png" alt=""
+        /></a>
+        <h3>Sorciere</h3>
+        <span>Description :</span>
+        <i>
+          la Sorciere est l'une des plus grande sorciere pour devenir un sorcier
+          on a besoin d'un maitre et lui enseigne et enchante les objets
+        </i>
+      </article>
+      <!-- Sorcier-->
+      <!--sprit du Sorcier-->
+    </main>
+    <script src="../assets/js/script.js"></script>
+    <script src="./assets/js/__loading__.js"></script>
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/watermark-button.be960f43b.js"></script>
+  </body>
+</html>

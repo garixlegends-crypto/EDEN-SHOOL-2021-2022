@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+/*  des selecteur directement dans le tableau  */
+.d-flex-table-pre table{
+    /*  les border sont fusionner ou sinon border-collapse: separate; 
+    les bordeur ne sont pas fusioner  */
+    border-collapse: collapse;
+    border: solid 1px;
+    width: 50%;
+    background-color: slategray;
+}
+.d-flex-table-pre th{
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.d-flex-table-pre{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.d-flex-table-pre tr:hover{
+    background-color: antiquewhite;
+}
+.d-flex-table-pre th:hover{
+    background-color: red;
+}
+table{
+    border-collapse: collapse;
+    border: solid 1px;
+    width: 50%;
+    background-color: slategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.margin-auto th:nth-child(odd){
+    background-color: #c7c7c7;
+}
+
+th[scope="col"] {
+    background-color: #191970;
+    color: #fff;
+    border: solid blue;
+}
+
+.margin-auto{
+    display: flex;
+    justify-content: center;
+}
+ tbody tr, td, th {
+    border: dotted 2px  #ddd;
+    color: white;
+    color: black;
+    text-align: center;
+}
+.margin-auto tr:nth-child(even){
+    background-color: white;
+}
+.margin-auto tr:nth-child(odd){
+    background-color: #F3F3F3;
+}
+.ok td{
+    border: transparent;
+}

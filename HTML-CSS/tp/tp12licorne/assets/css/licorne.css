@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:hover{
+    transition: all .2s ease;
+}
+html{
+    /* UN SEUL REGLAGE ICI */
+    font-size: 62.5%;
+}
+body{ /* les reglage que en ve sur les paragraphe sur la page 
+    => on utilise l'heritage*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;/*unite relativive = 16px l'unite absolue*/
+    line-height: 1.6;/*ici en ne met pas d'unité = la hauteur enter ligne sera
+    relative a la font size ici x1.0*/
+    font-family: sans-serif;
+    background-image: url(../img/background.png);
+}
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+}
+header{
+    background-color: #65c1be;
+    width: 100%;
+    color: white;
+}
+.d-flex-h1-nav{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Courgette', cursive;
+}
+.d-flex-h1-nav ul{
+    margin: auto;
+}
+.d-flex-h1-nav li{
+    list-style: none;
+    display: inline;
+    padding: 37px 40px 40px 35px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+.d-flex-h1-nav h1{
+    margin: 21px;
+}
+nav li:hover {
+    background: #000000;
+}
+.d-flex-h1-nav   .active{
+    background: #000000;
+    padding: 37px 40px 40px 35px;
+}
+.arc-ciel {
+    background-image: url(../img/rainbow.png);
+    height: 175px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: top;
+    margin-top: 40px;
+   
+}
+.arc-ciel h2{
+    color: #65c1be;
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+} 
+.container-block{
+    display: block;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    width: 60%;
+    height: 1500px;
+    box-shadow: 0px 3px 20px 0px;
+    padding: 15px;
+}
+.d-flex-h3{
+    color: #65c1be;
+    display: flex;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+}
+
+.d-flex-h3 .far{
+    font-size: 3rem;
+    margin: 10px;
+}
+.d-flex-h3 h3{
+    font-size: 3rem;
+}
+.d-flex-background{
+    display: flex;
+}
+.poney, .poney-1 , .poney-2, .poney-3{
+    width: 25%;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+.poney::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../img/photo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .5s linear;
+}
+.poney-1::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../img/photo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .5s linear;
+}
+.poney-2::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../img/photo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .5s linear;
+}
+.poney-3::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../img/photo4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .5s linear;
+}
+.block-gray{
+    position: absolute;
+    margin-top: 220px;
+    width: 278px;
+    background-color: rgb(4 4 4 / 50%);
+    text-align: center;
+    color: white;
+}
+.poney:hover::before{
+    transform: scale(1.3);
+}
+.poney-1:hover::before{
+    transform: scale(1.3);
+}
+.poney-2:hover::before{
+    transform: scale(1.3);
+}
+.poney-3:hover::before{
+    transform: scale(1.3);
+}
+.map-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.licorne h4{
+    color: #65c1be;
+}
+#emailAddress{
+    padding: 10px;
+}
+#boutton{
+    background-color: #65c1be;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+footer{
+    margin-top: 50px;
+    background-color: #65c1be;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+footer p{
+    padding: 15px;
+}
